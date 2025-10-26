@@ -24,7 +24,6 @@ The repository is organized into separate directories for each implementation, p
 └── README.md # This file
 
 yaml
-Copy code
 
 ---
 
@@ -39,15 +38,16 @@ To run a specific version, navigate to its directory and follow the setup instru
 cd react-app
 npm install
 npm run dev
-Example for Vue:
-bash
-Copy code
+```
+### Example for Vue:
+
+```bash
 cd vue-app
 npm install
 npm run dev
-Example for Twig/PHP:
-bash
-Copy code
+```
+### Example for Twig/PHP:
+```bash
 cd twig-app
 composer install
 npm install
@@ -55,12 +55,12 @@ npm install
 npm run watch
 # In another terminal, run the PHP server
 php -S localhost:8000 -t public
+```
 
-🖼️ /shared-assets/
+### 🖼️ /shared-assets/
 This folder contains assets that are identical across all three implementations to maintain visual consistency.
 
-arduino
-Copy code
+```arduino
 /shared-assets
 ├── hero-wave.svg             # The wavy background for the hero section
 ├── decorative-circle-1.svg   # A decorative circle element
