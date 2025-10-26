@@ -16,14 +16,14 @@ The application includes:
 
 The repository is organized into separate directories for each implementation, plus a folder for shared assets:
 
+```arduino
 /ticket-management-app
 ├── /react-app # React + Vite + Tailwind CSS implementation
 ├── /vue-app # Vue.js + Vite + Tailwind CSS implementation
 ├── /twig-app # Twig + PHP + Tailwind CSS implementation
 ├── /shared-assets # SVGs and images used across all projects
 └── README.md # This file
-
-yaml
+```
 
 ---
 
@@ -39,6 +39,7 @@ cd react-app
 npm install
 npm run dev
 ```
+
 ### Example for Vue:
 
 ```bash
@@ -46,7 +47,9 @@ cd vue-app
 npm install
 npm run dev
 ```
+
 ### Example for Twig/PHP:
+
 ```bash
 cd twig-app
 composer install
@@ -58,6 +61,7 @@ php -S localhost:8000 -t public
 ```
 
 ### 🖼️ /shared-assets/
+
 This folder contains assets that are identical across all three implementations to maintain visual consistency.
 
 ```arduino
