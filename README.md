@@ -18,9 +18,9 @@ The repository is organized into separate directories for each implementation, p
 
 ```arduino
 /ticket-management-app
-├── /react-app # React + Vite + Tailwind CSS implementation
-├── /vue-app # Vue.js + Vite + Tailwind CSS implementation
-├── /twig-app # Twig + PHP + Tailwind CSS implementation
+├── /react # React + Vite + Tailwind CSS implementation
+├── /vue # Vue.js + Vite + Tailwind CSS implementation
+├── /twig # Twig + PHP + Tailwind CSS implementation
 ├── /shared-assets # SVGs and images used across all projects
 └── README.md # This file
 ```
@@ -35,7 +35,7 @@ To run a specific version, navigate to its directory and follow the setup instru
 ### Example for React:
 
 ```bash
-cd react-app
+cd react
 npm install
 npm run dev
 ```
@@ -43,7 +43,7 @@ npm run dev
 ### Example for Vue:
 
 ```bash
-cd vue-app
+cd vue
 npm install
 npm run dev
 ```
@@ -51,8 +51,10 @@ npm run dev
 ### Example for Twig/PHP:
 
 ```bash
-cd twig-app
-composer install
+cd twig
+php composer.phar install (if composer is installed locally)
+or
+composer install (if composer is installed globally)
 npm install
 # In one terminal, run the CSS watcher
 npm run watch
