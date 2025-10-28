@@ -85,10 +85,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
 import { useForm } from "vee-validate";
-import { object, string, mixed } from "yup";
-import type { Ticket, TicketStatus } from "@/types";
+import * as yup from "yup";
+import type { Ticket } from "@/types";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";

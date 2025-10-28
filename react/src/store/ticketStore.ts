@@ -1,37 +1,8 @@
+// ticketStore from react
+
 import { create } from "zustand";
 import type { Ticket, TicketState } from "@/types";
 import { useAuthStore } from "@/store/authStore";
-
-// Initialize with some demo tickets
-// const demoTickets: Ticket[] = [
-//   {
-//     id: "1",
-//     title: "Fix login page responsive design",
-//     description: "The login page doesn't display correctly on mobile devices.",
-//     status: "open",
-//     priority: "high",
-//     createdAt: new Date(Date.now() - 86400000).toISOString(),
-//     updatedAt: new Date(Date.now() - 86400000).toISOString(),
-//   },
-//   {
-//     id: "2",
-//     title: "Update dashboard statistics",
-//     description: "Add more detailed analytics to the dashboard.",
-//     status: "in_progress",
-//     priority: "medium",
-//     createdAt: new Date(Date.now() - 172800000).toISOString(),
-//     updatedAt: new Date(Date.now() - 3600000).toISOString(),
-//   },
-//   {
-//     id: "3",
-//     title: "Setup email notifications",
-//     description: "Configure automated email notifications for ticket updates.",
-//     status: "closed",
-//     priority: "low",
-//     createdAt: new Date(Date.now() - 259200000).toISOString(),
-//     updatedAt: new Date(Date.now() - 7200000).toISOString(),
-//   },
-// ];
 
 export const useTicketStore = create<TicketState>((set, get) => ({
   tickets: [],
