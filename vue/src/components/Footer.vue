@@ -61,7 +61,7 @@
 
 <script setup lang="ts">
 import { Github, Twitter, Linkedin } from "lucide-vue-next";
-import { ref } from "vue";
+
 
 const currentYear = new Date().getFullYear();
 </script>

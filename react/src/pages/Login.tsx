@@ -9,7 +9,7 @@ import { Card } from "@/components/ui/card";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { useAuthStore } from "@/store/authStore";
-import toast from "react-hot-toast";
+import { toast } from "sonner";
 import { useState, useEffect } from "react";
 import { loginSchema } from "@/validation/authSchemas";
 
@@ -56,7 +56,7 @@ const Login = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
 
-      <main className="flex-1 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 via-background to-primary-glow/5">
+      <main className="flex-1 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-primary/5 via-background to-primary-glow/5">
         <div className="w-full max-w-md">
           <Card className="p-8 shadow-xl">
             <div className="text-center mb-8">
